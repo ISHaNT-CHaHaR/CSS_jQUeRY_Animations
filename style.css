@@ -8,20 +8,17 @@ body{
 nav{
     width: 100%;
     background: #34495e;
-    position: fixed;
 
 }
 ul{
     width: 80%;
     margin: 0 auto;
     padding: 0  ;
-    text-align: right;
 }
 ul li{
     list-style: none;
     display: inline-block;
     padding: 20px;
-
 }
 ul li:hover{
     background:#fd79a8;
@@ -41,16 +38,8 @@ ul li a{
     box-sizing: border-box;
      color: white;
      font-size: 30px;
-     display: block; 
-     position: fixed;
-     
+     display: none; 
 }
-
-
-
-
-
-/*///////////////////////////////////////RESPONSIVE//////////////////////////////////////*/
 @media(max-width:800px)
 {
     .toggle{
@@ -59,20 +48,11 @@ ul li a{
 
 ul{
      width: 100%;
-     display: none;
        
 }
 ul li{
-    display: block; 
+    display: none; 
     text-align: center;
      
 }
-
-.active{
-    display: block;
-}
-
-
-
-
 }
