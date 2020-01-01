@@ -2,12 +2,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-
+      background-color: black;
 }
 
 nav{
     width: 100%;
-    background: #34495e;
+    background: black;
 
 }
 ul{
@@ -19,9 +19,18 @@ ul li{
     list-style: none;
     display: inline-block;
     padding: 20px;
+     position: relative;
+      
 }
 ul li:hover{
     background:#fd79a8;
+   color: #e84393;
+   box-shadow: 0 0 10px #fd79a8, 0 0 40px #fd79a8, 0 0 80px #fd79a8;
+   transition-delay: 10ms ;
+
+}
+header{
+    background: black;
 }
 
 ul li a{
@@ -40,19 +49,32 @@ ul li a{
      font-size: 30px;
      display: none; 
 }
+
+
+
+
+
+
+
+
+/* //////////////////////RESPONSVE//////////////////////////*/
 @media(max-width:800px)
 {
     .toggle{
         display: block;  
     }
 
-ul{
+    ul{
      width: 100%;
+     display: none;;
        
 }
-ul li{
-    display: none; 
+    ul li{
+    display:  block; 
     text-align: center;
      
 }
+    .active{
+        display: block;
+    }
 }
